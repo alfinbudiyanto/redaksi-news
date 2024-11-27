@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="assets/footer.css">
 </head>
-</head>
 
 <body>
     <!-- Navbar -->
@@ -88,12 +87,12 @@
         </div>
     </div>
 
-    <footer class="footer-basic">
+    <footer class="footer-basic footer-light bg-light">
         <ul class="list-inline">
             <li class="list-inline-item"><a href="#">Home</a></li>
         </ul>
         <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
-        <p class="copyright">Di buat dengan ❤ dan ☕ © 2024</p>
+        <p class="copyright">Di buat dengan sepenuh ❤ dan secangkir ☕ © 2024</p>
     </footer>
 
     <!-- REQUIRED SCRIPTS -->
