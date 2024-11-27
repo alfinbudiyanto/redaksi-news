@@ -6,13 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redaksi News</title>
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-
-    <!-- Footer -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-    <link rel="stylesheet" href="assets/footer.css">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="<?= base_url('assets/backend/') ?>plugins/fontawesome-free/css/all.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="<?= base_url('assets/backend/') ?>dist/css/adminlte.min.css">
 </head>
 
 <body>
@@ -25,10 +22,15 @@
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <!-- Menggunakan mx-auto untuk memposisikan tombol Home di tengah -->
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="<?= base_url('main'); ?>">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="<?= base_url('auth'); ?>">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="<?= base_url('dashboard'); ?>">Admin</a>
                     </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
@@ -87,23 +89,38 @@
         </div>
     </div>
 
-    <footer class="footer-basic footer-light bg-light">
-        <ul class="list-inline">
-            <li class="list-inline-item"><a href="#">Home</a></li>
+    <footer class="bg-light text-center py-4">
+        <ul class="list-inline mb-3">
+            <li class="list-inline-item">
+                <a href="<?= base_url('main'); ?>" class="text-dark">Home</a>
+            </li>
+            <li class="list-inline-item">
+                <a href="<?= base_url('auth'); ?>" class="text-dark">Login</a>
+            </li>
+            <li class="list-inline-item">
+                <a href="<?= base_url('dashboard'); ?>" class="text-dark">Admin</a>
+            </li>
         </ul>
-        <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
-        <p class="copyright">Di buat dengan sepenuh ❤ dan secangkir ☕ © 2024</p>
+        <div class="mb-3">
+            <a href="#" class="text-dark mx-2"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-dark mx-2"><i class="fab fa-snapchat"></i></a>
+            <a href="#" class="text-dark mx-2"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-dark mx-2"><i class="fab fa-facebook"></i></a>
+        </div>
+        <p class="text-muted">
+            Dibuat dengan sepenuh ❤ dan secangkir ☕ © 2024
+        </p>
     </footer>
+
 
     <!-- REQUIRED SCRIPTS -->
 
-    <!-- jQuery and Bootstrap Bundle -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
-
-    <!-- Footer -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+    <!-- jQuery -->
+    <script src="<?= base_url('assets/backend/') ?>plugins/jquery/jquery.slim.js"></script>
+    <!-- Popper -->
+    <script src="<?= base_url('assets/backend/') ?>plugins/popper/popper.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="<?= base_url('assets/backend/') ?>plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
