@@ -30,9 +30,9 @@
             <div class="card-body login-card-body">
                 <p class="login-box-msg">Sign in to start your session</p>
 
-                <form action="<?= base_url('assets/backend') ?>/index3.html" method="post">
+                <form action="<?= site_url('auth/process') ?>" method="post">
                     <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Nama" required autofocus>
+                        <input type="text" name="username" class="form-control" placeholder="Username" required autofocus>
                         <div class="input-group-append">
                             <div class="input-group-text">
                                 <span class="fas fa-user"></span>
@@ -40,7 +40,7 @@
                         </div>
                     </div>
                     <div class="input-group mb-3">
-                        <input type="password" class="form-control" placeholder="Password" required>
+                        <input type="password" name="password" class="form-control" placeholder="Password" required>
                         <div class="input-group-append">
                             <div class="input-group-text">
                                 <span class="fas fa-lock"></span>
@@ -50,7 +50,7 @@
                     <div class="row">
                         <!-- /.col -->
                         <div class="col">
-                            <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+                            <button type="submit" name="login" class="btn btn-primary btn-block">Sign In</button>
                         </div>
                         <!-- /.col -->
                     </div>

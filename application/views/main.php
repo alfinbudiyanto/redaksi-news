@@ -24,13 +24,13 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="<?= base_url('main'); ?>">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="<?= site_url('main'); ?>">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="<?= base_url('auth'); ?>">Login</a>
+                        <a class="nav-link" href="<?= site_url('auth/login'); ?>">Login</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="<?= base_url('dashboard'); ?>">Admin</a>
+                        <a class="nav-link" href="<?= site_url('dashboard'); ?>">Admin</a>
                     </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
@@ -92,13 +92,13 @@
     <footer class="bg-light text-center py-4">
         <ul class="list-inline mb-3">
             <li class="list-inline-item">
-                <a href="<?= base_url('main'); ?>" class="text-dark">Home</a>
+                <a href="<?= site_url('main'); ?>" class="text-dark">Home</a>
             </li>
             <li class="list-inline-item">
-                <a href="<?= base_url('auth'); ?>" class="text-dark">Login</a>
+                <a href="<?= site_url('auth'); ?>" class="text-dark">Login</a>
             </li>
             <li class="list-inline-item">
-                <a href="<?= base_url('dashboard'); ?>" class="text-dark">Admin</a>
+                <a href="<?= site_url('dashboard'); ?>" class="text-dark">Admin</a>
             </li>
         </ul>
         <div class="mb-3">

@@ -30,10 +30,13 @@
 
             <ul class="navbar-nav pl-5 ml-5 mx-auto">
                 <li class="nav-item d-none d-sm-inline-block">
-                    <a href="<?= base_url('dashboard'); ?>" class="nav-link">Home</a>
+                    <a href="<?= site_url('dashboard'); ?>" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
-                    <a href="<?= base_url('main'); ?>" class="nav-link">Page User</a>
+                    <a href="<?= site_url('main'); ?>" class="nav-link">Main Page</a>
+                </li>
+                <li class="nav-item d-none d-sm-inline-block">
+                    <a href="<?= site_url('auth/login'); ?>" class="nav-link">Login</a>
                 </li>
             </ul>
 
@@ -87,7 +90,7 @@
                             </a>
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link active">
+                                    <a href="<?= site_url('dashboard'); ?>" class="nav-link active">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Active Page</p>
                                     </a>
