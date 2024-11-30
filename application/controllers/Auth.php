@@ -5,6 +5,7 @@ class Auth extends CI_Controller
 {
     public function login()
     {
+        check_alredy_login();
         $this->load->view('login');
     }
 
@@ -19,16 +20,26 @@ class Auth extends CI_Controller
                 $row = $query->row();
                 $params = array(
                     'userid' => $row->user_id,
+                    'username' => $row->username,
+                    'name' => $row->name,
                     'level' => $row->level
                 );
                 $this->session->set_userdata($params);
-
-                echo "
-                    <script>
-                        alert('Welcome, Login success!');
-                        window.location = '" . site_url('dashboard') . "';
-                    </script>
-                ";
+                if ($params['level'] === '1') {
+                    echo "
+                        <script>
+                            alert('Welcome " . $params['name'] . ", Login success!');
+                            window.location='" . site_url('dashboard') . "';
+                        </script>
+                    ";
+                } else {
+                    echo "
+                        <script>
+                            alert('Welcome " . $params['name'] . ", Login success!');
+                            window.location='" . site_url('main') . "';
+                        </script>
+                    ";
+                }
             } else {
                 echo "
                     <script>
@@ -38,5 +49,12 @@ class Auth extends CI_Controller
                 ";
             }
         }
+    }
+
+    public function logout()
+    {
+        $params = array('userid', 'name', 'level');
+        $this->session->unset_userdata($params);
+        redirect('auth/login');
     }
 }
