@@ -50,7 +50,7 @@
                 <li class="nav-item dropdown user-menu">
                     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
                         <img src="<?= base_url('assets/backend'); ?>/dist/img/user2-160x160.jpg" class="user-image img-circle elevation-2" alt="User Image">
-                        <span class="d-none d-md-inline">Alexander Pierce</span>
+                        <span class="d-none d-md-inline"><?= $userInfo->username; ?></span>
                     </a>
                     <ul class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
                         <!-- User image -->
@@ -58,8 +58,8 @@
                             <img src="<?= base_url('assets/backend'); ?>/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
 
                             <p>
-                                Alexander Pierce - Web Developer
-                                <small>Member since Nov. 2012</small>
+                                <?= $userInfo->name; ?>
+                                <small><?= $userInfo->address; ?></small>
                             </p>
                         </li>
                         <!-- Menu Footer-->
@@ -90,7 +90,7 @@
                         <img src="<?= base_url('assets/backend/') ?>dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
                     </div>
                     <div class="info">
-                        <a href="#" class="d-block">Alexander Pierce</a>
+                        <a href="#" class="d-block"><?= ucfirst($userInfo->username); ?></a>
                     </div>
                 </div>
 
