@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <title>AdminLTE 3 | Starter</title>
+    <title>Redaksi News | <?= $title; ?></title>
 
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="<?= base_url('assets/backend/') ?>plugins/fontawesome-free/css/all.min.css">
@@ -79,7 +79,7 @@
             <a href="#" class="brand-link">
                 <img src="<?= base_url('assets/backend/') ?>dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
                     style="opacity: .8">
-                <span class="brand-text font-weight-light">AdminLTE 3</span>
+                <span class="brand-text font-weight-light">Redaksi News</span>
             </a>
 
             <!-- Sidebar -->
@@ -103,15 +103,15 @@
                             <a href="#" class="nav-link active">
                                 <i class="nav-icon fas fa-tachometer-alt"></i>
                                 <p>
-                                    Starter Pages
+                                    Dashboard
                                     <i class="right fas fa-angle-left"></i>
                                 </p>
                             </a>
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
                                     <a href="<?= site_url('dashboard'); ?>" class="nav-link active">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Active Page</p>
+                                        <i class="fab fa-youtube nav-icon"></i>
+                                        <p>Content</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
@@ -145,12 +145,12 @@
                 <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                            <h1 class="m-0 text-dark">Starter Page</h1>
+                            <h1 class="m-0 text-dark"><?= $title; ?></h1>
                         </div><!-- /.col -->
                         <div class="col-sm-6">
                             <ol class="breadcrumb float-sm-right">
                                 <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                <li class="breadcrumb-item active">Starter Page</li>
+                                <li class="breadcrumb-item active"><?= $title; ?></li>
                             </ol>
                         </div><!-- /.col -->
                     </div><!-- /.row -->
@@ -169,16 +169,6 @@
         </div>
         <!-- /.content-wrapper -->
 
-        <!-- Control Sidebar -->
-        <aside class="control-sidebar control-sidebar-dark">
-            <!-- Control sidebar content goes here -->
-            <div class="p-3">
-                <h5>Title</h5>
-                <p>Sidebar content</p>
-            </div>
-        </aside>
-        <!-- /.control-sidebar -->
-
         <!-- Main Footer -->
         <footer class="main-footer">
             <!-- To the right -->
@@ -186,7 +176,7 @@
                 Anything you want
             </div>
             <!-- Default to the left -->
-            <strong>Copyright &copy; 2014-2019 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
+            <strong>Copyright &copy; 2024-2025 <a href="#">Redaksi News</a>.</strong> All rights reserved.
         </footer>
     </div>
     <!-- ./wrapper -->

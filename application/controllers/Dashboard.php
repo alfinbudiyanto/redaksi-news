@@ -7,6 +7,7 @@ class Dashboard extends CI_Controller
     {
         check_not_login();
 
+        $data['title'] = 'Dashboard';
         $data['userInfo'] = $this->func->user_login();
         $this->template->load('template', 'dashboard', $data);
     }
